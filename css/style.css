@@ -1,0 +1,207 @@
+@font-face {
+    font-family: 'interregular';
+    src: url('fonts/inter-regular-webfont.woff2') format('woff2'),
+         url('fonts/inter-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'interbold';
+    src: url('fonts/inter-bold-webfont.woff2') format('woff2'),
+         url('fonts/inter-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'intermedium';
+    src: url('fonts/inter-medium-webfont.woff2') format('woff2'),
+         url('fonts/inter-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'interblack';
+    src: url('fonts/inter-black-webfont.woff2') format('woff2'),
+         url('fonts/inter-black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'interextra_bold';
+    src: url('fonts/inter-extrabold-webfont.woff2') format('woff2'),
+         url('fonts/inter-extrabold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+body{
+    font-family: 'interregular';
+    padding-bottom: 0px;
+}
+.container, .container-lg, .container-md, .container-sm, .container-xl{
+    max-width: 1180px;
+}
+.d-flex{
+    width:100%;
+}
+.mt-30{
+    margin-top:30px;
+}
+.mb-30{
+    margin-bottom:30px;
+}
+.f-align-right{
+    justify-content: flex-end;
+}
+.navbar{
+    padding-top: 1.27rem;
+    padding-bottom: 1.27rem;
+}
+.banner{
+   background-color:#E2E8F0;
+   min-height: 745px;
+   display: flex;
+   align-items: center;
+   margin-bottom:60px;
+}
+.btn {
+    border-radius: .1rem;
+    font-family: 'intermedium';
+    padding: .6rem 1.45rem;
+    font-size: 16px;
+    line-height: 24px;
+}
+.heading{
+    font-family: 'interextra_bold';
+    color: #0F172A;
+    font-size : 48px;
+    font-weight: 900 !important;
+    line-height: 60px;
+}
+.navbar-brand{
+    padding-bottom: 0px;
+}
+.navbar-brand img,footer img{
+    width:120px;
+    display: inline-block;
+}
+.sub-heading{
+    font-family: 'intermedium';
+    font-size: 24px;
+    color: #0F172A;
+    font-weight: 800;
+}
+.btn-see-all:hover {
+    background-color: #0F172A;
+}
+.btn-see-all{
+    background-color: #0F172A;
+    border: none;
+}
+.btn-see-all.apply{
+    width: 100%;
+    padding:.3rem 1.45rem;
+    font-family: 'intermedium';
+    font-size: 14px;
+    font-weight: 700;
+}
+hr:not([size]){
+    height: 0px;
+}
+.featurette-divider{
+    height: 0px;
+    clear: both;
+    border: none;
+    height: 0px;
+}
+.section-title{
+    font-family: 'interbold';
+    font-size: 36px;
+    font-weight: 900;
+    color: #0F172A;
+    line-height: 48px;
+}
+.img-radius{
+    border-radius: 280px;
+}
+.lead{
+    font-size: 16px;
+    font-family: 'interregular';
+    font-weight: 400;
+    line-height: 24px;
+    color: #0F172A;
+}
+.featurette{
+    align-items: center;
+}
+.auth-details{
+    font-family: 'intermedium';
+    font-size: 24px;
+    color: #000000;
+    line-height: 34px; 
+}
+footer{
+    min-height: 187px;
+    background-color: #212529 !important;
+    display: flex;
+    align-items: center;
+}
+footer p {
+   margin-bottom: 0px; 
+}
+/* .dynamic_data{
+    height:500px;
+    overflow-y: auto;
+    overflow: hidden;
+} */
+.wrapper {
+    height: 400px;
+    overflow-y: auto;
+  }
+table thead{
+    background-color: #ffffff;
+}
+table>:not(caption)>*>*{
+    padding: 1rem 1rem;
+    background-color: var(--bs-table-bg);
+    border-bottom-width: 1px;
+    border-bottom-color: #E2E8F0;
+    box-shadow: inset 0 0 0 9999px var(--bs-table-accent-bg);
+}
+table tr th{
+    font-family: 'intermedium';
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+}
+table tr td{
+    font-family: 'interregular';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #475569;
+    vertical-align: middle;
+}
+.pagination-list {
+    text-align: center;
+}
+.pagination-numbers{
+    list-style: none;
+    display: flex;
+    padding:10px 10px;
+    justify-content: center;
+}
+.pagination-numbers li{
+    padding:10px 20px;
+    color: #0F172A;
+    font-family: 'interbold';
+    font-size: 16px;
+    line-height: 24px;
+}
+.pagination-numbers li.active{
+    border:1px solid #0F172A;
+    border-radius: 50%;
+}
