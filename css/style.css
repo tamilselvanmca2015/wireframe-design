@@ -1,44 +1,35 @@
 @font-face {
-    font-family: 'interregular';
-    src: url('fonts/inter-regular-webfont.woff2') format('woff2'),
-         url('fonts/inter-regular-webfont.woff') format('woff');
+    font-family: 'amazon_emberregular';
+    src: url('fonts/amazon_ember_rg-webfont.woff2') format('woff2'),
+         url('fonts/amazon_ember_rg-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
-    font-family: 'interbold';
-    src: url('fonts/inter-bold-webfont.woff2') format('woff2'),
-         url('fonts/inter-bold-webfont.woff') format('woff');
+    font-family: 'amazon_emberbold';
+    src: url('fonts/amazon_ember_bd-webfont.woff2') format('woff2'),
+         url('fonts/amazon_ember_bd-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
 @font-face {
-    font-family: 'intermedium';
-    src: url('fonts/inter-medium-webfont.woff2') format('woff2'),
-         url('fonts/inter-medium-webfont.woff') format('woff');
+    font-family: 'amazon_emberheavy';
+    src: url('fonts/amazonember_he-webfont.woff2') format('woff2'),
+         url('fonts/amazonember_he-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
 @font-face {
-    font-family: 'interblack';
-    src: url('fonts/inter-black-webfont.woff2') format('woff2'),
-         url('fonts/inter-black-webfont.woff') format('woff');
+    font-family: 'amazon_embermedium';
+    src: url('fonts/amazon-ember-medium-webfont.woff2') format('woff2'),
+         url('fonts/amazon-ember-medium-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
-@font-face {
-    font-family: 'interextra_bold';
-    src: url('fonts/inter-extrabold-webfont.woff2') format('woff2'),
-         url('fonts/inter-extrabold-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
 
-}
+
 body{
-    font-family: 'interregular';
+    font-family: 'amazon_emberregular';
     padding-bottom: 0px;
 }
 .container, .container-lg, .container-md, .container-sm, .container-xl{
@@ -46,6 +37,9 @@ body{
 }
 .d-flex{
     width:100%;
+}
+.p-30{
+    padding:30px 0px;
 }
 .mt-30{
     margin-top:30px;
@@ -57,26 +51,45 @@ body{
     justify-content: flex-end;
 }
 .navbar{
-    padding-top: 1.27rem;
-    padding-bottom: 1.27rem;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.bg-dark{
+    background-color: #232F3E !important;
+}
+.bg-gray{
+    background-color:#E9EAEC;
 }
 .banner{
-   background-color:#E2E8F0;
+   background-image:url('../images/Hero_Image_Retouch.png');
    min-height: 745px;
    display: flex;
    align-items: center;
-   margin-bottom:60px;
+   margin-bottom:0px;
+   background-size: cover;
+   opacity: 0.9;
 }
 .btn {
     border-radius: .1rem;
-    font-family: 'intermedium';
-    padding: .6rem 1.45rem;
-    font-size: 16px;
+    font-family: 'amazon_emberheavy';
+    padding: .4rem 1.45rem;
+    font-size: 15px;
     line-height: 24px;
 }
+.btn.btn-blue{
+    background-color: #29A8CE !important;
+    font-size: 15px;
+}
+.btn-check:focus+.btn-primary, .btn-blue:focus{
+    background-color: #29A8CE !important;
+    font-size: 15px;
+}
+small{
+    color:#29A8CE;
+}
 .heading{
-    font-family: 'interextra_bold';
-    color: #0F172A;
+    font-family: 'amazon_emberheavy';
+    color: #ffffff ;
     font-size : 48px;
     font-weight: 900 !important;
     line-height: 60px;
@@ -85,26 +98,35 @@ body{
     padding-bottom: 0px;
 }
 .navbar-brand img,footer img{
-    width:120px;
+    width:250px;
     display: inline-block;
 }
 .sub-heading{
-    font-family: 'intermedium';
-    font-size: 24px;
-    color: #0F172A;
-    font-weight: 800;
+    font-family: 'amazon_embermedium';
+    font-size: 20px;
+    color: #ffffff;
 }
+.sub-heading.cr-dark{
+    color:#232F3E;
+    font-family:'amazon_emberheavy';
+    font-size: 18px;
+}
+
 .btn-see-all:hover {
     background-color: #0F172A;
 }
-.btn-see-all{
+.btn:focus{
+    box-shadow:none !important;
+}
+.btn-see-all,.btn-check:focus+.btn-primary, .btn-blue:focus{
     background-color: #0F172A;
-    border: none;
+    border: none !important;
+    box-shadow: none !important;
 }
 .btn-see-all.apply{
     width: 100%;
     padding:.3rem 1.45rem;
-    font-family: 'intermedium';
+    font-family: 'amazon_embermedium';
     font-size: 14px;
     font-weight: 700;
 }
@@ -118,18 +140,19 @@ hr:not([size]){
     height: 0px;
 }
 .section-title{
-    font-family: 'interbold';
+    font-family: 'amazon_emberbold';
     font-size: 36px;
     font-weight: 900;
     color: #0F172A;
     line-height: 48px;
+    margin-bottom: 30px;
 }
 .img-radius{
     border-radius: 280px;
 }
 .lead{
     font-size: 16px;
-    font-family: 'interregular';
+    font-family: 'amazon_emberregular';
     font-weight: 400;
     line-height: 24px;
     color: #0F172A;
@@ -138,14 +161,14 @@ hr:not([size]){
     align-items: center;
 }
 .auth-details{
-    font-family: 'intermedium';
+    font-family: 'amazon_embermedium';
     font-size: 24px;
     color: #000000;
     line-height: 34px; 
 }
 footer{
     min-height: 187px;
-    background-color: #212529 !important;
+    background-color: #232F3E !important;
     display: flex;
     align-items: center;
 }
@@ -160,7 +183,23 @@ footer p {
 .wrapper {
     height: 400px;
     overflow-y: auto;
-  }
+    margin-bottom: 30px;
+    position: relative;
+}
+.wrapper .loader{
+    position: absolute;
+    height:100%;
+    width: 98%;
+    z-index: 9;
+    background: #ffffff;
+    opacity: 0.8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.spinner-border{
+    color: #0F172A !important;
+}
 table thead{
     background-color: #ffffff;
 }
@@ -172,13 +211,13 @@ table>:not(caption)>*>*{
     box-shadow: inset 0 0 0 9999px var(--bs-table-accent-bg);
 }
 table tr th{
-    font-family: 'intermedium';
+    font-family: 'amazon_embermedium';
     font-size: 16px;
     font-weight: 700;
     line-height: 24px;
 }
 table tr td{
-    font-family: 'interregular';
+    font-family: 'amazon_emberregular';
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
@@ -187,21 +226,117 @@ table tr td{
 }
 .pagination-list {
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .pagination-numbers{
     list-style: none;
     display: flex;
     padding:10px 10px;
     justify-content: center;
+    margin-bottom: 0px;
+}
+.pagination-list .arrows{
+    cursor: pointer;
+    font-size: 16px;
 }
 .pagination-numbers li{
-    padding:10px 20px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: #0F172A;
-    font-family: 'interbold';
+    font-family: 'amazon_emberbold';
     font-size: 16px;
     line-height: 24px;
+    cursor: pointer;
 }
 .pagination-numbers li.active{
     border:1px solid #0F172A;
     border-radius: 50%;
+}
+
+.job-lists{
+    list-style: none;
+    padding-left: 0px;
+    font-family: 'amazon_embermedium';
+    font-size: 20px;
+}
+.job-lists li label{
+    line-height: 24px;
+}
+.job-lists li{
+    display: flex;
+    align-items: center;
+    padding-bottom: 15px;
+}
+.job-lists .list-icon{
+    width: 65px;
+    margin-right: 15px;
+}
+.img-section{
+    width:400px;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 100%;
+    display: inline-block;
+    background-image: url('../images/Image_for_section_What_the_jobs_will_provide.jpg');
+}
+/* .img-section.artical-section{
+    width:350px;
+    height: 350px;
+    background-size: cover;
+    background-image: url('../images/accompany_Delivery.jpg');
+} */
+.img-section img{
+    width:100%;
+}
+.quote-img{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+.carousel{
+    margin-bottom:0px;
+}
+.carousel-item{
+    height: 25rem;
+}
+.carousel-dark .carousel-indicators [data-bs-target]{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+.bg-dark-gray{
+    background-color: #394451;
+}
+.bg-dark-gray .section-title{
+    color: #ffffff;
+}
+.carousel-indicators button{
+    background-color: #4F5865 !important;
+}
+.carousel-indicators button.active{
+    background-color: #29A8CE !important;
+}
+.footer-link{
+    list-style: none;
+    display: flex;
+    padding-left: 0px;
+    margin: 0px;
+}
+.footer-link li a{
+    padding-right: 20px;
+    color: #ffffff;
+    text-decoration: none;
+    font-family: 'amazon_emberregular';
+}
+/**************** Media query *******************/
+@media only screen and (max-width: 767px) {
+    .carousel-item{
+        height: auto;
+    }
 }
